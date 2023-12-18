@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+    <header>
+        <note>MSOFFICE</note>
+    </header>
+    <group resname="themes">
+        <trans-unit id="4B58FF79B83E40328B2127EF9777C744" resname="4B58FF79B83E40328B2127EF9777C744" translate="no">
+            <source>MSOFFICE Encryption Level</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="4B58FF79B83E40328B2127EF9777C744">
+      <trans-unit d4:value="0:L" id="4B58FF79B83E40328B2127EF9777C744.100">
+        <source>MSOFFICE Encryption AES128</source>
+      </trans-unit>
+      <trans-unit d4:value="1:L" id="4B58FF79B83E40328B2127EF9777C744.101">
+        <source>MSOFFICE Encryption AES256</source>
+      </trans-unit>
+    </group>
+</xliff>
