@@ -1,4 +1,4 @@
-# 4d-plugin-msoffice-v2
+# 4d-plugin-msoffice
 Private Research Project
 
 # libxlnt
