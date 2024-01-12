@@ -3,3 +3,5 @@ msoffice/test/Resources/*
 msoffice/test/Data/*
 msoffice/test/Project/DerivedData/*
 msoffice/test/userPreferences.*
+msoffice/.vs/*
+msoffice/Objs/*

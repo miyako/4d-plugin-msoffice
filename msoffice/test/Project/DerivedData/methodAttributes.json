@@ -1,13 +1,13 @@
 {
 	"methods": {
+		"PROTECT": {
+			"timeStamp": "2023-12-20T08:45:09Z"
+		},
 		"READ_VALUES": {
-			"timeStamp": "2023-12-12T10:04:22Z"
+			"timeStamp": "2023-12-20T08:45:09Z"
 		},
 		"WRITE_VALUES": {
-			"timeStamp": "2023-12-12T09:39:04Z"
-		},
-		"PROTECT": {
-			"timeStamp": "2023-12-12T12:07:35Z"
+			"timeStamp": "2023-12-20T08:45:09Z"
 		}
 	}
 }

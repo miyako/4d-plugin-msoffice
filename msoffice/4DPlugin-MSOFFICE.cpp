@@ -93,10 +93,15 @@ static void generateUuid(std::wstring &uuidstr)
 static void temporary_file_path(CUTF8String& path) {
     
 #if VERSIONWIN
+
+    std::wstring path_u16 = std::filesystem::temp_directory_path().wstring();
+
+    /*
     wchar_t fDrive[_MAX_DRIVE], fDir[_MAX_DIR], fName[_MAX_FNAME], fExt[_MAX_EXT];
     std::vector<wchar_t>_buf(_MAX_DRIVE + _MAX_DIR + _MAX_FNAME + _MAX_EXT);
     GetTempPath(_buf.size(), (LPWSTR)&_buf[0]);
     std::wstring path_u16 = (LPWSTR)&_buf[0];
+    */
 
     std::wstring uuid;
     generateUuid(uuid);
@@ -107,6 +112,9 @@ static void temporary_file_path(CUTF8String& path) {
     C_TEXT t;
     t.setUTF16String((const PA_Unichar *)path_u16.c_str(), path_u16.length());
     t.copyUTF8String(&path);
+
+    std::replace(path.begin(), path.end(), '\\', '/');
+
 #else
     NSURL *url = nil;
     
@@ -578,10 +586,12 @@ static void Write_to_spreadsheet(PA_PluginParameters params) {
                             }
                         }
                     }
-                    
+                 
                     CUTF8String temp;
                     temporary_file_path(temp);
-                                                    
+                  
+                    ob_set_s(status, L"temporaryFilePath", (const char *)temp.c_str());
+
                     doc.saveAs(std::string((const char *)temp.c_str()));
 
                     doc.close();
@@ -596,7 +606,7 @@ static void Write_to_spreadsheet(PA_PluginParameters params) {
                 }
                 
             } catch (std::exception& e) {
-                
+                ob_set_s(status, L"error", e.what());
             }
         }
 

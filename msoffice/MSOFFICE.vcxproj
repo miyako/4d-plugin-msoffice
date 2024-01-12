@@ -75,7 +75,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -147,7 +147,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include\libxml2;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include;$(ProjectDir);4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories);C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\support;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include\openxlsx;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\support;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\third_party\cybozulib\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\third_party\msoffice\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include\libxml2;$(ProjectDir)\include;$(ProjectDir);support;include;include\windows;4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories);$(ProjectDir)\support;$(ProjectDir)\include\openxlsx;$(ProjectDir)..\third_party\cybozulib\include;$(ProjectDir)..\third_party\msoffice\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NONDLL;BGDWIN32;WIN64;WIN32;NOMINMAX;_WINDOWS;NDEBUG;_USRDLL;MY4DPLUGIN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -198,7 +198,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include\libxml2;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include;$(ProjectDir);support;include;include\windows;4D Plugin API\Classes;4D Plugin API;include;%(AdditionalIncludeDirectories);C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\support;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include\openxlsx;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\support;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\third_party\cybozulib\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\third_party\msoffice\include;C:\Users\miyako\Documents\GitHub\4d-plugin-msoffice-v2\4d-plugin-msoffice\msoffice\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include\libxml2;$(ProjectDir)\include;$(ProjectDir);support;include;include\windows;4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories);$(ProjectDir)\support;$(ProjectDir)\include\openxlsx;$(ProjectDir)..\third_party\cybozulib\include;$(ProjectDir)..\third_party\msoffice\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NONDLL;BGDWIN32;WIN64;WIN32;NOMINMAX;_WINDOWS;NDEBUG;_USRDLL;MY4DPLUGIN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
