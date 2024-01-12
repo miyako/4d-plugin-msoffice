@@ -5,3 +5,4 @@ msoffice/test/Project/DerivedData/*
 msoffice/test/userPreferences.*
 msoffice/.vs/*
 msoffice/Objs/*
+msoffice/build/*
