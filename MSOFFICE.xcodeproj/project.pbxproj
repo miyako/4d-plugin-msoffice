@@ -401,7 +401,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** third_party/msoffice/include third_party/cybozulib/include";
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -455,7 +455,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** third_party/msoffice/include third_party/cybozulib/include";
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -507,7 +507,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** third_party/msoffice/include third_party/cybozulib/include";
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
