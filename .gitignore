@@ -6,3 +6,4 @@ msoffice/test/userPreferences.*
 msoffice/.vs/*
 msoffice/Objs/*
 msoffice/build/*
+build/*
