@@ -6,3 +6,7 @@ msoffice/test/userPreferences.*
 msoffice/.vs/*
 msoffice/Objs/*
 msoffice/build/*
+.vs/*
+test/Plugins/MSOFFICE.bundle/Contents/Windows64/MSOFFICE.exp
+test/Plugins/MSOFFICE.bundle/Contents/Windows64/MSOFFICE.lib
+Objs/*
