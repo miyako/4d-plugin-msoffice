@@ -80,7 +80,7 @@ static void generateUuid(std::wstring &uuidstr)
     if (UuidCreate(&uuid) == RPC_S_OK) {
         if (UuidToString(&uuid, &str) == RPC_S_OK) {
             size_t len = wcslen((const wchar_t *)str);
-            std::vector<wchar_t>buf(len);
+            std::vector<wchar_t>buf(len + 1, 0); // +1 for the null terminator _wcsupr requires
             memcpy(&buf[0], str, len * sizeof(wchar_t));
             _wcsupr((wchar_t *)&buf[0]);
             uuidstr = std::wstring((const wchar_t *)&buf[0], len);
@@ -831,11 +831,15 @@ static void copy_macro_parts(CUTF8String& infilename_u8, CUTF8String& outfilenam
                 if (instream != NULL) {
                     std::vector<unsigned char>buf(size);
                     if(opcContainerReadInputStream(instream, &buf[0], size) == size) {
-                        part = opcPartCreate(target,
+                        // Use a separate variable for the part created in `target`.
+                        // Reassigning the loop's own `part` here previously corrupted
+                        // the for-loop's `part = opcPartGetNext(source, part)` increment,
+                        // which must always advance relative to a `source`-container handle.
+                        opcPart targetPart = opcPartCreate(target,
                                              part,
                                              type, 0);
                         opcContainerOutputStream *outstream = opcContainerCreateOutputStream(target,
-                                                                                             part,
+                                                                                             targetPart,
                                                                                              OPC_COMPRESSIONOPTION_NONE);
                         if(outstream != NULL) {
                             
