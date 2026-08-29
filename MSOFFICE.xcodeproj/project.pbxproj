@@ -409,6 +409,7 @@
 				);
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Development;
 		};
@@ -463,6 +464,7 @@
 				);
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Deployment;
 		};
@@ -514,6 +516,7 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = bundle;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Default;
 		};
@@ -564,6 +567,8 @@
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
+				MARKETING_VERSION = 1.0.6;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Development;
 		};
@@ -614,6 +619,8 @@
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
+				MARKETING_VERSION = 1.0.6;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Deployment;
 		};
@@ -663,6 +670,8 @@
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
+				MARKETING_VERSION = 1.0.6;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Default;
 		};
