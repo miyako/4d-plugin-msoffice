@@ -393,7 +393,7 @@
 				);
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -448,7 +448,7 @@
 				);
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -501,7 +501,7 @@
 				);
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -569,7 +569,7 @@
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Development;
@@ -621,7 +621,7 @@
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Deployment;
@@ -672,7 +672,7 @@
 				SYMROOT = "$(SRCROOT)/test/Plugins";
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include/openxlsx\" \"$(SRCROOT)/include\"/** \"$(SRCROOT)/../third_party/cybozulib/include\" \"$(SRCROOT)/../third_party/msoffice/include\"";
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				CURRENT_PROJECT_VERSION = 1.0.6;
 			};
 			name = Default;
