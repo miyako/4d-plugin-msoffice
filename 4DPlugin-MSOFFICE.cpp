@@ -146,8 +146,9 @@ static void temporary_file_path(CUTF8String& path) {
 static void copy_document_native(C_TEXT& infilename, C_TEXT& outfilename) {
 
     PA_Variable params[3];
-    params[0] = PA_CreateVariable(eVK_Unistring);
-    params[1] = PA_CreateVariable(eVK_Unistring);
+    // eVK_Undefined: eVK_Unistring would allocate a value that the shallow PA_SetStringVariable below overwrites and leaks
+    params[0] = PA_CreateVariable(eVK_Undefined);
+    params[1] = PA_CreateVariable(eVK_Undefined);
     params[2] = PA_CreateVariable(eVK_Undefined);
 
     PA_Unistring ifilepath =
@@ -484,6 +485,7 @@ static bool parseReferencesObject(PA_ObjectRef references, Json::Value *value) {
     
     C_TEXT t;
     t.setUTF16String(&u16);
+    PA_DisposeUnistring(&u16); // PA_JsonStringify returns an owned string
     CUTF8String u8;
     t.copyUTF8String(&u8);
     
@@ -720,7 +722,8 @@ static void Read_from_spreadsheet(PA_PluginParameters params) {
         {
             std::string sheet_title = *it;
             
-            PA_Variable v = PA_CreateVariable(eVK_Unistring);
+            // eVK_Undefined: eVK_Unistring would allocate a value that the shallow PA_SetStringVariable below overwrites and leaks
+            PA_Variable v = PA_CreateVariable(eVK_Undefined);
             C_TEXT t;
             t.setUTF8String((const uint8_t *)sheet_title.c_str(), (uint32_t)sheet_title.length());
             CUTF16String u16;
